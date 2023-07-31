@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zoom1/widgets/custom_button.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -21,7 +22,10 @@ class _SignUpState extends State<SignUp> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          Image.asset(name)
+          
+          Image.asset('assets/images/onboarding.jpg'),
+          Padding(padding:const EdgeInsets.symmetric(vertical: 38.0)),
+          CustomButton(text:'Login'),
         ],
       ),
     );
