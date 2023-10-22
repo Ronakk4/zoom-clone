@@ -25,7 +25,7 @@ class _SignUpState extends State<SignUp> {
           
           Image.asset('assets/images/onboarding.jpg'),
           Padding(padding:const EdgeInsets.symmetric(vertical: 38.0)),
-          CustomButton(text:'Login'),
+          CustomButton(text:'Login',onPressed: (){},),
         ],
       ),
     );

@@ -7,18 +7,21 @@ environment:
   sdk: '>=2.19.6 <3.0.0'
 
 dependencies:
+  cloud_firestore: ^4.8.4
+  firebase_auth: ^4.7.2
+  firebase_core: ^2.19.0
   flutter:
     sdk: flutter
+  google: ^0.0.1
+  google_sign_in: ^6.1.4
 
 dev_dependencies:
+  flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
 
   assets:
     - assets/images/onboarding.jpg
-
-
