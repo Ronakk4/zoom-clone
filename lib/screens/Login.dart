@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zoom1/widgets/custom_button.dart';
+import 'package:zoom1/resources/auth_methods.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -25,7 +26,13 @@ class _SignUpState extends State<SignUp> {
           
           Image.asset('assets/images/onboarding.jpg'),
           Padding(padding:const EdgeInsets.symmetric(vertical: 38.0)),
-          CustomButton(text:'Login',onPressed: (){},),
+          CustomButton(text:'Login',onPressed: () async {
+            print("hi");
+            await AuthMethods().signInWithGoogle(context);
+            print("logged in");
+           
+            
+          },),
         ],
       ),
     );

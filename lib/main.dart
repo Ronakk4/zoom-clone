@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:zoom1/resources/auth_methods.dart';
+import 'package:zoom1/screens/Homescree.dart';
+
 import 'package:zoom1/screens/Login.dart';
 import 'package:zoom1/utils/Color.dart';
 
@@ -33,7 +35,7 @@ class MainApp extends StatelessWidget {
           }
 
           if (snapshot.hasData) {
-            //return const HomeScreen();
+            return const HomeScreen();
           }
 
           return const SignUp();
