@@ -14,6 +14,7 @@ dependencies:
     sdk: flutter
   google: ^0.0.1
   google_sign_in: ^6.1.4
+  intl: ^0.18.1
   jitsi_meet_v1: ^5.0.0
 
 

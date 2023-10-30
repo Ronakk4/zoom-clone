@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> pages = [
     MeetingScreen(),
-    const HistoryMeeting(),
+    const HistoryMeetingScreen(),
     const Text('Contacts'),
     //CustomButton(text: 'Log Out', onPressed: () => AuthMethods().signOut()),
   ];
