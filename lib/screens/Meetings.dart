@@ -2,8 +2,6 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-
-
 import '../resources/jitnsi_meet_methods.dart';
 import '../widgets/home_meeting_button.dart';
 
@@ -14,7 +12,7 @@ class MeetingScreen extends StatelessWidget {
 
   createNewMeeting() async {
     var random = Random();
-    String roomName = (random.nextInt(10000000) + 10000000).toString();
+    String roomName = (random.nextInt(10000000) + 100000000).toString();
     _jitsiMeetMethods.createMeeting(
         roomName: roomName, isAudioMuted: true, isVideoMuted: true);
   }
@@ -36,7 +34,7 @@ class MeetingScreen extends StatelessWidget {
               icon: Icons.videocam,
             ),
             HomeMeetingButton(
-              onPressed: () {},
+              onPressed: () => joinMeeting(context),
               text: 'Join Meeting',
               icon: Icons.add_box_rounded,
             ),

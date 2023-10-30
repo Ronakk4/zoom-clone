@@ -4,6 +4,7 @@ import 'package:zoom1/resources/auth_methods.dart';
 import 'package:zoom1/screens/Homescree.dart';
 
 import 'package:zoom1/screens/Login.dart';
+import 'package:zoom1/screens/video_screen.dart';
 import 'package:zoom1/utils/Color.dart';
 
 void main() async {
@@ -24,6 +25,8 @@ class MainApp extends StatelessWidget {
         scaffoldBackgroundColor: backgroundColor,
       ),routes: {
         '/login': (context) => const SignUp(),
+        '/video-call':(context)=>const VideoCallScreen(),
+        '/home':(context)=> const HomeScreen()
       },
       home: StreamBuilder(
         stream: AuthMethods().authChanges,
